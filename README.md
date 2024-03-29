@@ -1,1 +1,5 @@
-# IntroductionProject
+# Introduction Project
+1. To let the player fly around, I took any changes to horizontal and vertical input. Most of these values were between -1 and 1, inclusive. I used these values to move the character forward at the appropriate speed. (PlayerMovement.cs)
+2. Teleporting to different locations involved storing the locations as Vector3 variables. All I did was take input from the user and if the input corresponded to the keys for changing position, I set the position to the appropriate one. (MoveToLocation.cs)
+3. Increasing the vignette involved having a global volume object and enabling the vignette for it. In the script, I was able to have the volume as a variable and get the vignette component from it. From there, I was able to change the vignette based on whether the player was moving or not. (PlayerMovement.cs)
+4. To change the intensity of the sunlight, I added a UI slider object. The object included text ("Sunlight Intensity") and went from 0 to 1. The player can use their mouse clicker to change the intensity. The sunlight intensity was then changed to the value of the slider. (SunlightIntensity.cs)
